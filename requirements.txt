@@ -7,3 +7,4 @@ fire
 easydict
 pandas
 tqdm
+lightly

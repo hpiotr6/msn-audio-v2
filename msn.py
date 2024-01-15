@@ -107,7 +107,7 @@ def main(_cfg: DictConfig):
     if cfg.wandb:
         today_date = datetime.today().strftime(r"%d-%m-%Y")
         project_name = f"audio-{today_date}"
-        wandb_logger = WandbLogger(project=project_name, entity="phondra")
+        wandb_logger = WandbLogger(project=project_name, entity=cfg.entity)
         wandb_logger.experiment.config.update({**cfg})
         wandb_logger.watch(model)
 

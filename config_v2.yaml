@@ -27,3 +27,4 @@ scheduler:
 resume: audio-15-12-2023/91v2hdvh/checkpoints/epoch=1-step=4.ckpt
 audio_dir: work/16k/audioset/audioset
 wandb: True
+entity:
