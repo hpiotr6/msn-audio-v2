@@ -1,0 +1,29 @@
+# Unit duration in seconds for one audio segment.
+unit_sec: 0.95
+# FFT parameters.
+sample_rate: 16000
+n_fft: 1024
+win_length: 1024
+hop_length: 160
+n_mels: 64
+f_min: 60
+f_max: 7800
+# Dimensions of feature representations.
+feature_d: 3072
+# BYOL parameters.
+proj_size: 64
+proj_dim: 4096
+ema_decay: 0.99
+# Training parameters.
+seed: 42
+bs: 256
+lr: 1e-4
+epochs: 500
+num_workers: 0
+shape: [64, 96]
+scheduler:
+  milestones: [101, 200, 300, 400]
+  gamma: 0.1
+resume: audio-15-12-2023/91v2hdvh/checkpoints/epoch=1-step=4.ckpt
+audio_dir: work/16k/audioset/audioset
+wandb: True
